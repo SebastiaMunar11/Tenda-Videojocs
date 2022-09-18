@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/login.css">
+    <link rel="icon" type="image/ico" href="images/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/script.js"></script>
+    <title>Biblioteca</title>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+</head>
+<body class="d-table w-100 text-white">
+  <header>
+    <div class="modal fade" id="exampleModalLive" tabindex="-1" aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <div class="fadeIn first">
+                  <img src="images/Valve2.png" class="my-4"id="icon" alt="User Icon"/>
+              </div>
+              <form>
+                  <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+                  <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+                  <input type="submit" class="fadeIn fourth" value="Log In">
+              </form>
+              <div id="formFooter">
+                  <a class="underlineHover" href="register.html">Register</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="topNav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="icon" src="images/Valve2.png">
+              <strong class="titol text-white">Valve 2</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="index.html">Inici</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="tenda.html">Tenda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-white" href="#">Biblioteca</a>
+                </li>
+              </ul>
+              <button class="btn btn-trans text-white" data-bs-toggle="modal" data-bs-target="#exampleModalLive">Login</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Jocs adquirits</h1>
+    <table class="table" style="height:100%">
+      <tbody>
+      <tr>
+          <td><img src="images/witcher_caratula.jpg" alt="" class="col-9" onmouseover="card_witcher()" onmouseout="amagar_card_witcher()" onmousemove="seguir_witcher()" onclick="veure_witcher()"></td>
+          <div class="cartes" id="display_witcher" style="display:none">
+              <div class="card mb-3" id="carta" style="max-width: 540px;">
+                  <div class="row g-0">
+                      <div class="col-md-4 my-auto">
+                          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                      <img class="d-block w-100" src="images/witcher1.jpg" alt="First slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block w-100" src="../images/witcher2.jpg" alt="Second slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block w-100" src="../images/witcher3.jpg" alt="Third slide">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">The Witcher 3: Wild Hunt</h5>
+                            <p class="card-text">Gènere: RPG d'acció</p>
+                            <p class="card-text">Data de compra: 07/03/2005</p>
+                            <p class="card-text">Temps jugat: 2000hr</p>
+                            <p class="card-text"><small class="text-muted">Jugat per darrera vegada l'1 de maig de 2020</small></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <td><img src="images/minecraft_caratula.jpg" alt="" class="col-9" onmouseover="card_minecraft()" onmouseout="amagar_card_minecraft()" onmousemove="seguir_minecraft()" onclick="veure_minecraft()"></td>
+          <div class="cartes" id="display_minecraft" style="display:none">
+              <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                      <div class="col-md-4 my-auto">
+                          <div  class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                      <img class="d-block w-100" src="images/minecraft1.jpg" alt="First slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block w-100" src="../images/witcher2.jpg" alt="Second slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block w-100" src="../images/witcher3.jpg" alt="Third slide">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Minecraft: Java Edition</h5>
+                            <p class="card-text">Gènere: Món Obert</p>
+                            <p class="card-text">Data de compra: 23/11/2010</p>
+                            <p class="card-text">Temps jugat: 700hr</p>
+                            <p class="card-text"><small class="text-muted">Jugat per darrera vegada l'7 de febrer de 2021</small></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <td><img src="images/darksouls_caratula.jpg" alt="" class="col-9" onmouseover="card_ds()" onmouseout="amagar_card_ds()" onmousemove="seguir_ds()" onclick="veure_ds3()"></td>
+          <div class="cartes" id="display_darksouls" style="display:none">
+              <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                      <div class="col-md-4 my-auto">
+                          <div  class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                      <img class="d-block w-100" src="images/darksouls.jpg" alt="First slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block w-100" src="../images/witcher2.jpg" alt="Second slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block w-100" src="../images/witcher3.jpg" alt="Third slide">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Dark Souls 3</h5>
+                            <p class="card-text">Gènere: RPG d'acció</p>
+                            <p class="card-text">Data de compra: 08/10/2019</p>
+                            <p class="card-text">Temps jugat: 200hr</p>
+                            <p class="card-text"><small class="text-muted">Jugat per darrera vegada el 18 de juny de 2018</small></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </tr>
+      <tr>
+          <td><img src="images/gta_caratula.jpg" alt="" class="col-9" onmouseover="card_gtaV()" onmouseout="amagar_card_gtaV()" onmousemove="seguir_gtaV()" onclick="veure_gta5()"></td>
+          <div class="cartes" id="display_gtaV" style="display:none">
+              <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                      <div class="col-md-4 my-auto">
+                          <div  class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                      <img class="d-block w-100" src="images/gtaV.jpg" alt="First slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block w-100" src="../images/witcher2.jpg" alt="Second slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block w-100" src="../images/witcher3.jpg" alt="Third slide">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Grand Theft Auto V</h5>
+                                <p class="card-text">Gènere: Món Obert</p>
+                                <p class="card-text">Data de compra: 08/10/2019</p>
+                                <p class="card-text">Temps jugat: 1757hr</p>
+                                <p class="card-text"><small class="text-muted">Jugat per darrera vegada el 14 de maig de 2021</small></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <td><img src="images/gtas_caratula.jpg" alt="" class="col-9" onmouseover="card_gtaSA()" onmouseout="amagar_card_gtaSA()" onmousemove="seguir_gtaSA()" onclick="veure_gtasa()"></td>
+          <div class="cartes" id="display_gtaSA" style="display:none">
+              <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                      <div class="col-md-4 my-auto">
+                          <div  class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                      <img class="d-block w-100" src="images/gtaSA.jpg" alt="First slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block w-100" src="../images/witcher2.jpg" alt="Second slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block w-100" src="../images/witcher3.jpg" alt="Third slide">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Grand Theft Auto San Andreas</h5>
+                            <p class="card-text">Gènere: Món Obert</p>
+                            <p class="card-text">Data de compra: 08/10/2019</p>
+                            <p class="card-text">Temps jugat: 4000hr</p>
+                            <p class="card-text"><small class="text-muted">Jugat per darrera vegada el 14 de maig de 2014</small></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <td><img src="images/lol_caratula.jpg" alt="" class="col-9" onmouseover="card_lol()" onmouseout="amagar_card_lol()" onmousemove="seguir_lol()" onclick="veure_lol()"></td>
+          <div class="cartes" id="display_lol" style="display:none">
+              <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                      <div class="col-md-4 my-auto">
+                          <div  class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                      <img class="d-block w-100" src="images/lol.jpg" alt="First slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block w-100" src="../images/witcher2.jpg" alt="Second slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block w-100" src="../images/witcher3.jpg" alt="Third slide">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">League Of Legends</h5>
+                            <p class="card-text">Gènere: Moba</p>
+                            <p class="card-text">Data d'adqueriment: 08/10/2011</p>
+                            <p class="card-text">Temps jugat: 10500hr</p>
+                            <p class="card-text"><small class="text-muted">Jugat per darrera vegada el 16 de maig de 2021</small></p>
+                            
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </tr>
+      </tbody>
+  </table>
+    </div>
+  </main>
+  <footer class="bg-dark w-100">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm">
+          <p class="mt-2"><img src="images/Valve2.png" class="icon">Valve 2</p>
+          <p class="troll0">Cualsevol parescut del nostre logo amb el de Steam es mera coincidencia</p>
+          <p class="troll my-0">No ens feim responsables dels problemes que puguin tenir els usuaris amb l'adicció a aquests jocs</p>
+          <p class="troll my-0">Menys CyberPunk</p>
+          <p class="troll2 my-0">Es impossible jugar més de 30 min sense vomitar</p>
+        </div>
+        <div class="col-sm">
+        </div>
+        <div class="col-sm">
+          <p>Adrià Nicolau Sánchez</p>
+          <div class="social-icons">
+            <a class="social-icon" href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" href="https://www.github.com"><i class="fab fa-github"></i></a>
+            <a class="social-icon" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a class="social-icon" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        </div>
+        <div class="col-sm">
+          <p>Sebastià Munar Alcover</p>
+          <div class="social-icons">
+            <a class="social-icon" href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" href="https://www.github.com"><i class="fab fa-github"></i></a>
+            <a class="social-icon" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a class="social-icon" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/login.css">
+    <link rel="icon" type="image/ico" href="images/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <title>GTA SA</title>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+</head>
+<body class="d-table w-100 text-white">
+  <header>
+    <div class="modal fade" id="exampleModalLive" tabindex="-1" aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <div class="fadeIn first">
+                  <img src="images/Valve2.png" class="my-4"id="icon" alt="User Icon"/>
+              </div>
+              <form>
+                  <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+                  <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+                  <input type="submit" class="fadeIn fourth" value="Log In">
+              </form>
+              <div id="formFooter">
+                  <a class="underlineHover" href="register.html">Register</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="topNav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="icon" src="images/Valve2.png">
+              <strong class="titol text-white">Valve 2</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-white" href="index.html">Inici</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="tenda.html">Tenda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="biblio.html">Biblioteca</a>
+                </li>
+              </ul>
+              <button class="btn btn-trans text-white" data-bs-toggle="modal" data-bs-target="#exampleModalLive">Login</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center">Grand Theft Auto: San Andreas</h1>
+        <div id="carouselExampleIndicators" class="carousel slide col-8 mx-auto my-0" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/gtaSA1.jpg" class="img-fluid">
+            </div>
+            <div class="carousel-item">
+              <img src="images/gtaSA2.jpg" class="img-fluid">
+            </div>
+            <div class="carousel-item">
+              <img src="images/gtaSA3.jpg" class="img-fluid">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="col-8 mx-auto mt-5">
+          <h3>Sinopsis</h3>
+          <p>
+            Lorem ipsum <strong>Rockstar</strong> dolor sit amet, consectetur adipiscing elit. Nam volutpat sapien libero, ac pulvinar urna volutpat non. Donec at elementum magna. Curabitur posuere in diam a vestibulum. Donec non ultrices arcu. Aliquam erat volutpat. Mauris ullamcorper, ligula ut viverra porta, purus lectus euismod libero, vel tempus turpis tortor commodo magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus tincidunt fringilla risus quis pretium. Praesent facilisis mauris at lorem fermentum laoreet. Morbi non odio eget lacus tincidunt rhoncus. Mauris facilisis lacinia maximus. In eu tortor a quam varius egestas.
+          </p>
+          <p>
+            Proin sodales orci id neque facilisis, non tincidunt ex efficitur. Pellentesque rhoncus felis a libero eleifend, blandit sodales augue porttitor. Sed tincidunt metus a lorem pharetra, sed pharetra ante lobortis. Sed libero augue, sodales sit amet iaculis at, sollicitudin id lacus. Donec mollis nisl quis porta molestie. Fusce eu quam ut ante aliquam mollis eget eget nisi. Nunc in metus non mauris euismod rutrum sed vestibulum nisi. Proin vehicula eget erat nec vestibulum. Maecenas non vehicula magna. Ut lacinia metus quis mauris consequat, vel auctor erat suscipit. Proin placerat, sem in lacinia aliquam, dui est ornare ex, ac fringilla ex justo efficitur ante. Fusce tempus nibh tellus, a volutpat nisi suscipit id.
+          </p>
+          <p>
+            Vestibulum varius nulla elit, non sagittis felis tempus sed. Quisque pulvinar nunc velit, in consectetur ligula elementum in. Morbi sagittis est vel lorem eleifend, eu vestibulum nunc hendrerit. Vivamus id lorem sed augue sagittis pharetra eget eu lectus. Nunc ut dui nunc. Etiam at erat justo. Aliquam erat volutpat. Morbi id risus quis enim mattis tincidunt. Curabitur consectetur ex neque, ac hendrerit nulla imperdiet at. Fusce ut lobortis dui, porttitor fringilla tortor. Duis facilisis sollicitudin nisl vel consectetur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam sed laoreet mauris.
+          </p>
+          <p> 
+            Donec vehicula semper nunc bibendum pellentesque. Fusce quis faucibus felis. Aenean blandit mollis elit ac interdum. Sed pellentesque aliquam leo, at condimentum dui pretium vel. Nunc vel nisi tincidunt, vestibulum arcu eu, aliquam libero. Sed accumsan commodo odio, tempus bibendum ex pellentesque sed. Ut in pretium nunc. Aenean augue tortor, vehicula fermentum odio eget, pulvinar tincidunt enim. Etiam fermentum in purus sed faucibus. Ut lorem purus, consectetur et orci in, mattis tristique felis. Sed at nulla ut orci auctor finibus id quis lorem. Aliquam sed magna lectus. Aenean mattis magna eu consectetur ullamcorper. Quisque in dictum sapien.
+          </p>
+          <p>
+            Duis vulputate at risus eget imperdiet. Mauris non fringilla dolor, ut venenatis odio. Nam tincidunt, est sit amet faucibus cursus, elit felis dignissim urna, id fermentum purus mi et erat. Vestibulum lacus justo, viverra sit amet porta et, semper nec metus. In fermentum consectetur fermentum. Morbi at lobortis justo, et elementum nunc. Praesent in odio vitae urna cursus gravida sit amet ac sapien. Morbi non dolor in urna euismod blandit. Vestibulum luctus, velit nec maximus aliquet, dui neque mattis odio, vel volutpat ipsum turpis eu diam. Aliquam ex purus, pharetra a nisi at, pellentesque commodo leo. Donec in interdum leo. Proin justo urna, gravida eu scelerisque eu, congue sit amet mi.
+          </p>
+        </div>
+        </div>
+      </div>
+  </main>
+  <footer class="bg-dark w-100">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm">
+          <p class="mt-2"><img src="images/Valve2.png" class="icon">Valve 2</p>
+          <p class="troll0">Cualsevol parescut del nostre logo amb el de Steam es mera coincidencia</p>
+          <p class="troll my-0">No ens feim responsables dels problemes que puguin tenir els usuaris amb l'adicció a aquests jocs</p>
+          <p class="troll my-0">Menys CyberPunk</p>
+          <p class="troll2 my-0">Es impossible jugar més de 30 min sense vomitar</p>
+        </div>
+        <div class="col-sm">
+        </div>
+        <div class="col-sm">
+          <p>Adrià Nicolau Sánchez</p>
+          <div class="social-icons">
+            <a class="social-icon" href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" href="https://www.github.com"><i class="fab fa-github"></i></a>
+            <a class="social-icon" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a class="social-icon" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        </div>
+        <div class="col-sm">
+          <p>Sebastià Munar Alcover</p>
+          <div class="social-icons">
+            <a class="social-icon" href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" href="https://www.github.com"><i class="fab fa-github"></i></a>
+            <a class="social-icon" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a class="social-icon" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

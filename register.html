@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/style.css">
+    <link rel="icon" type="image/ico" href="images/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/script.js"></script>
+    <title>Registrarse</title>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+</head>
+<body class="d-table w-100 h-100 text-white">
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="topNav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="icon" src="images/Valve2.png">
+              <strong class="titol text-white">Valve 2</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-white" href="index.html">Inici</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="tenda.html">Tenda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="biblio.html">Biblioteca</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <form class="row g-3 needs-validation" novalidate action="index.html">
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip01" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="validationTooltip01" required>
+          <div class="valid-tooltip">
+            Té bona pinta
+          </div>
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip02" class="form-label">Primer llinatge</label>
+          <input type="text" class="form-control" id="validationTooltip02" required>
+          <div class="valid-tooltip">
+            Té bona pinta
+          </div>
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip03" class="form-label">Segon llinatge</label>
+          <input type="text" class="form-control" id="validationTooltip03" required>
+          <div class="valid-tooltip">
+            Té bona pinta
+          </div>
+        </div>
+        <div class="col-md-6 position-relative">
+          <label for="validationTooltipEmail" class="form-label">Correu electrònic</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+            <input type="text" class="form-control" id="validationTooltipEmail" aria-describedby="validationTooltipUsernamePrepend" required>
+            <div class="invalid-tooltip">
+              Correu incorrecte
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationTooltip04" class="form-label">DNI</label>
+          <input type="text" class="form-control" id="validationTooltip04" required>
+          <div class="valid-tooltip">
+            Té bona pinta
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationTooltip05" class="form-label">Usuari</label>
+          <input type="text" class="form-control" id="validationTooltip05" required>
+          <div class="valid-tooltip">
+            Té bona pinta
+          </div>
+        </div>
+        <div class="col-md-6 position-relative">
+          <label for="validationTooltip06" class="form-label">Ciutat</label>
+          <input type="text" class="form-control" id="validationTooltip06" required>
+          <div class="invalid-tooltip">
+            Escriu una ciutat vàlida
+          </div>
+        </div>
+        <div class="col-md-3 position-relative">
+          <label for="validationTooltip07" class="form-label">Comunitat</label>
+          <select class="form-select" id="validationTooltip07" required>
+            <option selected disabled value="">Tria...</option>
+            <option>Illes Balears</option>
+            <option>Catalunya</option>
+            <option>Aragó</option>
+            <option>Navarra</option>
+            <option>Pais Vasc</option>
+            <option>Cantàbria</option>
+            <option>Asturies</option>
+            <option>Galicia</option>
+            <option>La Rioja</option>
+            <option>Navarra</option>
+            <option>Castella i Lleó</option>
+            <option>Castella-La Manxa</option>
+            <option>Extremadura</option>
+            <option>Andalusia</option>
+            <option>Canàries</option>
+            <option>Múrcia</option>
+            <option>Madrid</option>
+          </select>
+          <div class="invalid-tooltip">
+            Selecciona la teva comunitat autònoma
+          </div>
+        </div>
+        <div class="col-md-3 position-relative">
+          <label for="validationTooltip08" class="form-label">Codi Postal</label>
+          <input type="text" class="form-control" id="validationTooltip08" required>
+          <div class="invalid-tooltip">
+            Escriu un codi postal correcte
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Envia</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="bg-dark w-100">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm">
+          <p class="mt-2"><img src="images/Valve2.png" class="icon">Valve 2</p>
+          <p class="troll0">Cualsevol parescut del nostre logo amb el de Steam es mera coincidencia</p>
+          <p class="troll my-0">No ens feim responsables dels problemes que puguin tenir els usuaris amb l'adicció a aquests jocs</p>
+          <p class="troll my-0">Menys CyberPunk</p>
+          <p class="troll2 my-0">Es impossible jugar més de 30 min sense vomitar</p>
+        </div>
+        <div class="col-sm">
+        </div>
+        <div class="col-sm">
+          <p>Adrià Nicolau Sánchez</p>
+          <div class="social-icons">
+            <a class="social-icon" href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" href="https://www.github.com"><i class="fab fa-github"></i></a>
+            <a class="social-icon" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a class="social-icon" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        </div>
+        <div class="col-sm">
+          <p>Sebastià Munar Alcover</p>
+          <div class="social-icons">
+            <a class="social-icon" href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" href="https://www.github.com"><i class="fab fa-github"></i></a>
+            <a class="social-icon" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a class="social-icon" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
